@@ -1,104 +1,1737 @@
-
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Toronto's most luxurious shisha catering service. Crown Shisha provides premium hookah experiences for corporate events, weddings, and private parties across the GTA.">
+    <meta name="keywords" content="shisha catering, hookah catering, luxury events, Toronto event catering, premium shisha, hookah lounge, event planning">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Crown Shisha Catering - Luxury Event Experience | Toronto GTA">
+    <meta property="og:description" content="Ultra-premium shisha catering services for elite events. Experience luxury redefined with Crown Shisha's exclusive services in Toronto GTA.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crownshisha.ca/">
+    <meta property="og:image" content="https://crownshisha.ca/images/og-preview.jpg">
+    
     <title>Crown Shisha Catering - Luxury Event Experience | Toronto GTA</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'gold-primary': '#FFD700',
-              'gold-secondary': '#FFA500',
-              'gold-tertiary': '#FF6B6B',
-              'dark-primary': '#0a0a0a',
-              'dark-secondary': '#141414',
-              'text-light': '#ffffff',
-              'text-muted': '#9a9a9a',
-            },
-            fontFamily: {
-              sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', 'sans-serif'],
-            },
-            keyframes: {
-              gradientShift: {
-                '0%, 100%': { 'background-position': '0% 50%' },
-                '50%': { 'background-position': '100% 50%' },
-              },
-              floatParticle: {
-                '0%': { transform: 'translateY(100vh) translateX(0)', opacity: '0' },
-                '10%': { opacity: '0.5' },
-                '90%': { opacity: '0.5' },
-                '100%': { transform: 'translateY(-100vh) translateX(100px)', opacity: '0' },
-              },
-              float: {
-                '0%, 100%': { transform: 'translateY(0) rotateY(0)' },
-                '50%': { transform: 'translateY(-10px) rotateY(10deg)' },
-              },
-              pulseGlow: {
-                '0%, 100%': { filter: 'drop-shadow(0 0 20px rgba(255, 215, 0, 0.6))' },
-                '50%': { filter: 'drop-shadow(0 0 40px rgba(255, 215, 0, 0.9))' },
-              },
-              heroEntrance: {
-                'from': { opacity: '0', transform: 'translateZ(-100px) rotateX(20deg)' },
-                'to': { opacity: '1', transform: 'translateZ(0) rotateX(0)' },
-              },
-              crownRotate: {
-                'from': { transform: 'rotateY(0deg)' },
-                'to': { transform: 'rotateY(360deg)' },
-              },
-              fadeIn: {
-                'from': { opacity: '0', transform: 'translateY(20px)' },
-                'to': { opacity: '1', transform: 'translateY(0)' },
-              },
-              iconFloat: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-10px)' },
-              },
-              holographic: {
-                '0%': { transform: 'rotate(0deg)' },
-                '100%': { transform: 'rotate(360deg)' },
-              },
-              slideIn: {
-                'from': { transform: 'translateX(100%)', opacity: '0' },
-                'to': { transform: 'translateX(0)', opacity: '1' },
-              },
-              slideOut: {
-                'from': { transform: 'translateX(0)', opacity: '1' },
-                'to': { transform: 'translateX(100%)', opacity: '0' },
-              },
-            },
-            animation: {
-              gradientShift: 'gradientShift 15s ease infinite',
-              floatParticle: 'floatParticle 20s infinite linear',
-              float: 'float 4s ease-in-out infinite',
-              pulseGlow: 'pulseGlow 2s ease-in-out infinite',
-              heroEntrance: 'heroEntrance 1.5s ease-out forwards',
-              crownRotate: 'crownRotate 10s linear infinite',
-              fadeIn: 'fadeIn 1.5s ease-out both',
-              iconFloat: 'iconFloat 3s ease-in-out infinite',
-              holographic: 'holographic 3s linear infinite',
-              slideIn: 'slideIn 0.5s ease',
-              slideOut: 'slideOut 0.5s ease forwards',
-            }
-          }
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <style>
+        /* 
+        ========================================
+        GLOBAL STYLES & CSS VARIABLES
+        ========================================
+        */
+        :root {
+            --gold-primary: #FFD700;
+            --gold-secondary: #FFA500;
+            --gold-tertiary: #FF6B6B;
+            --gold-gradient: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary), var(--gold-tertiary));
+            --dark-primary: #0a0a0a;
+            --dark-secondary: #141414;
+            --dark-card: #1a1a1a;
+            --text-light: #ffffff;
+            --text-muted: #9a9a9a;
+            --neon-glow: 0 0 30px rgba(255, 215, 0, 0.5);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --transition-standard: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            --transition-button: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            --transition-nav: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
         }
-      }
-    </script>
-  <script type="importmap">
+        
+        /* 
+        ========================================
+        BASE STYLES & RESET
+        ========================================
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: var(--dark-primary);
+            color: var(--text-light);
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+        }
+        
+        /* 
+        ========================================
+        ACCESSIBILITY
+        ========================================
+        */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--gold-primary);
+            color: var(--dark-primary);
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* 
+        ========================================
+        ANIMATED BACKGROUND
+        ========================================
+        */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(45deg, #0a0a0a, #1a1a1a, #0a0a0a);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--gold-primary);
+            border-radius: 50%;
+            opacity: 0;
+            animation: float-particle 20s infinite linear;
+        }
+        
+        @keyframes float-particle {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% { opacity: 0.5; }
+            90% { opacity: 0.5; }
+            100% {
+                transform: translateY(-100vh) translateX(100px);
+                opacity: 0;
+            }
+        }
+        
+        /* 
+        ========================================
+        NAVIGATION
+        ========================================
+        */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+            background: var(--glass-bg);
+            border-bottom: 1px solid var(--glass-border);
+            transition: var(--transition-nav);
+            will-change: background, backdrop-filter, box-shadow;
+        }
+        
+        .nav-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+        }
+        
+        .logo-3d {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            transform-style: preserve-3d;
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotateY(0); }
+            50% { transform: translateY(-10px) rotateY(10deg); }
+        }
+        
+        .crown-icon-3d {
+            font-size: 2.5rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6)); }
+            50% { filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.9)); }
+        }
+        
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-link {
+            position: relative;
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: var(--transition-standard);
+            overflow: hidden;
+            will-change: transform;
+        }
+        
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-gradient);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::before,
+        .nav-link:focus::before {
+            width: 100%;
+        }
+        
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--gold-primary);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        
+        .nav-link:focus {
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
+            border-radius: 4px;
+        }
+        
+        .cta-button-3d {
+            padding: 12px 30px;
+            background: var(--gold-gradient);
+            color: var(--dark-primary);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-button);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            will-change: transform, box-shadow;
+        }
+        
+        .cta-button-3d:hover,
+        .cta-button-3d:focus {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+            outline: none;
+        }
+        
+        .cta-button-3d:focus {
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5), 0 15px 40px rgba(255, 215, 0, 0.5);
+        }
+        
+        /* 
+        ========================================
+        HERO SECTION
+        ========================================
+        */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding-top: 100px;
+            perspective: 1000px;
+        }
+        
+        .hero-content {
+            text-align: center;
+            max-width: 1200px;
+            padding: 0 2rem;
+            transform-style: preserve-3d;
+            animation: hero-entrance 1.5s ease-out;
+        }
+        
+        @keyframes hero-entrance {
+            from {
+                opacity: 0;
+                transform: translateZ(-100px) rotateX(20deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateZ(0) rotateX(0);
+            }
+        }
+        
+        .hero-crown {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+            animation: crown-rotate 10s linear infinite;
+            filter: drop-shadow(0 0 50px rgba(255, 215, 0, 0.8));
+        }
+        
+        @keyframes crown-rotate {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+        
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 1.1;
+            filter: drop-shadow(0 10px 20px rgba(255, 215, 0, 0.3));
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            letter-spacing: 1px;
+            animation: fade-in 1.5s ease-out 0.5s both;
+        }
+        
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fade-in 1.5s ease-out 0.8s both;
+        }
+        
+        .btn-3d {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-button);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transform-style: preserve-3d;
+            will-change: transform, box-shadow;
+        }
+        
+        .btn-primary-3d {
+            background: var(--gold-gradient);
+            color: var(--dark-primary);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.4),
+                        inset 0 2px 0 rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-primary-3d:hover,
+        .btn-primary-3d:focus {
+            transform: translateY(-5px) rotateX(-10deg);
+            box-shadow: 0 30px 60px rgba(255, 215, 0, 0.6),
+                        inset 0 2px 0 rgba(255, 255, 255, 0.4);
+            outline: none;
+        }
+        
+        .btn-primary-3d:focus {
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5), 
+                        0 30px 60px rgba(255, 215, 0, 0.6),
+                        inset 0 2px 0 rgba(255, 255, 255, 0.4);
+        }
+        
+        .btn-secondary-3d {
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--gold-primary);
+            box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.1);
+        }
+        
+        .btn-secondary-3d:hover,
+        .btn-secondary-3d:focus {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-5px);
+            box-shadow: inset 0 0 30px rgba(255, 215, 0, 0.2),
+                        0 10px 30px rgba(255, 215, 0, 0.3);
+            outline: none;
+        }
+        
+        .btn-secondary-3d:focus {
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5),
+                        inset 0 0 30px rgba(255, 215, 0, 0.2),
+                        0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+        
+        /* 
+        ========================================
+        SECTIONS
+        ========================================
+        */
+        section {
+            position: relative;
+            padding: 100px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        
+        .section-title-3d {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* 
+        ========================================
+        SERVICES SECTION
+        ========================================
+        */
+        .services-section {
+            padding: 100px 0;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            perspective: 1000px;
+        }
+        
+        .card-3d {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            transition: var(--transition-standard);
+            transform-style: preserve-3d;
+            position: relative;
+            overflow: hidden;
+            will-change: transform, box-shadow;
+        }
+        
+        .card-3d::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold-gradient);
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+        
+        .card-3d:hover::before,
+        .card-3d:focus-within::before {
+            transform: scaleX(1);
+        }
+        
+        .card-3d:hover,
+        .card-3d:focus-within {
+            transform: translateY(-10px) rotateX(-5deg);
+            box-shadow: 0 30px 60px rgba(255, 215, 0, 0.2),
+                        0 40px 80px rgba(0, 0, 0, 0.4);
+            border-color: var(--gold-primary);
+        }
+        
+        .card-icon {
+            font-size: 3rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: icon-float 3s ease-in-out infinite;
+        }
+        
+        @keyframes icon-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+        
+        .card-description {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        
+        .card-features {
+            list-style: none;
+        }
+        
+        .card-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        
+        .card-feature i {
+            color: var(--gold-primary);
+            font-size: 0.9rem;
+        }
+        
+        /* 
+        ========================================
+        PACKAGES SECTION
+        ========================================
+        */
+        .packages-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--dark-secondary) 0%, var(--dark-primary) 100%);
+        }
+        
+        .package-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            will-change: transform, box-shadow;
+            min-height: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .package-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, 
+                transparent, 
+                rgba(255, 215, 0, 0.1), 
+                transparent, 
+                rgba(255, 165, 0, 0.1),
+                transparent);
+            animation: holographic 3s linear infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes holographic {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .package-card.featured {
+            border-color: var(--gold-primary);
+            transform: scale(1.05);
+            box-shadow: 0 0 60px rgba(255, 215, 0, 0.3);
+        }
+        
+        .package-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold-gradient);
+            color: var(--dark-primary);
+            padding: 8px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+        }
+        
+        .package-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        
+        .package-price {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        
+        .card-features {
+            margin-bottom: 2.5rem;
+            flex-grow: 1;
+        }
+        
+        /* 
+        ========================================
+        FLAVOURS SECTION
+        ========================================
+        */
+        .flavours-section {
+            padding: 100px 0;
+        }
+
+        .flavours-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .flavours-container::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, 
+                transparent, 
+                rgba(255, 215, 0, 0.05), 
+                transparent, 
+                rgba(255, 165, 0, 0.05),
+                transparent);
+            animation: holographic 4s linear infinite;
+            pointer-events: none;
+        }
+
+        .flavours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .flavour-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: var(--transition-standard);
+        }
+
+        .flavour-item i {
+            color: var(--gold-primary);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .flavour-item span {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .flavour-item:hover {
+            background: rgba(255, 215, 0, 0.05);
+            transform: translateX(5px);
+        }
+
+        .flavour-item:hover i {
+            transform: scale(1.2);
+        }
+
+        .flavour-item:hover span {
+            color: var(--text-light);
+        }
+        
+        /* 
+        ========================================
+        CONTACT SECTION
+        ========================================
+        */
+        .contact-section {
+            padding: 100px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        @media (min-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .contact-info-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: var(--transition-standard);
+            position: relative;
+            overflow: hidden;
+            will-change: transform, border-color, box-shadow;
+        }
+        
+        .contact-info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .contact-info-card:hover::before,
+        .contact-info-card:focus-within::before {
+            left: 100%;
+        }
+        
+        .contact-info-card:hover,
+        .contact-info-card:focus-within {
+            transform: translateX(10px);
+            border-color: var(--gold-primary);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+        }
+        
+        .form-3d {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 3rem;
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid var(--glass-border);
+            border-radius: 15px;
+            color: var(--text-light);
+            font-size: 1rem;
+            transition: var(--transition-standard);
+            font-family: inherit;
+            will-change: border-color, background, box-shadow;
+        }
+        
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            background: rgba(255, 215, 0, 0.05);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+        }
+        
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .submit-btn-3d {
+            width: 100%;
+            padding: 18px;
+            background: var(--gold-gradient);
+            color: var(--dark-primary);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition-button);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
+            will-change: transform, box-shadow;
+        }
+        
+        .submit-btn-3d:hover,
+        .submit-btn-3d:focus {
+            transform: translateY(-3px);
+            box-shadow: 0 30px 60px rgba(255, 215, 0, 0.5);
+            outline: none;
+        }
+        
+        .submit-btn-3d:focus {
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5), 0 30px 60px rgba(255, 215, 0, 0.5);
+        }
+        
+        .submit-btn-3d::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .submit-btn-3d:active::after {
+            width: 300px;
+            height: 300px;
+        }
+        
+        /* 
+        ========================================
+        FOOTER
+        ========================================
+        */
+        .footer {
+            padding: 60px 0 30px;
+            background: linear-gradient(180deg, var(--dark-primary) 0%, #000000 100%);
+            border-top: 1px solid var(--glass-border);
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+                text-align: left;
+            }
+        }
+        
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .footer-brand {
+                justify-content: flex-start;
+            }
+        }
+        
+        .footer-logo {
+            font-size: 2rem;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+        @media (min-width: 768px) {
+            .social-links {
+                justify-content: flex-start;
+            }
+        }
+        
+        .social-link {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: var(--transition-standard);
+        }
+        
+        .social-link:hover,
+        .social-link:focus {
+            background: var(--gold-gradient);
+            color: var(--dark-primary);
+            transform: translateY(-5px) rotate(360deg);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+            outline: none;
+        }
+        
+        .social-link:focus {
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5), 0 10px 30px rgba(255, 215, 0, 0.4);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-muted);
+        }
+        
+        /* 
+        ========================================
+        LOADING SCREEN
+        ========================================
+        */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            transition: opacity 0.5s ease;
+            will-change: opacity;
+        }
+        
+        .loading-screen.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .loader-3d {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate-3d 2s linear infinite;
+        }
+        
+        @keyframes rotate-3d {
+            0% { transform: rotateX(0) rotateY(0); }
+            100% { transform: rotateX(360deg) rotateY(360deg); }
+        }
+        
+        .loader-3d::before,
+        .loader-3d::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            border-top-color: var(--gold-primary);
+            border-radius: 50%;
+            animation: rotate-ring 1.5s linear infinite;
+        }
+        
+        .loader-3d::after {
+            animation-delay: 0.5s;
+            border-top-color: var(--gold-secondary);
+        }
+        
+        @keyframes rotate-ring {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* 
+        ========================================
+        MOBILE MENU
+        ========================================
+        */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition-standard);
+            z-index: 1001; /* Above mobile menu */
+        }
+        
+        .mobile-menu-btn:focus {
+            outline: 2px solid var(--gold-primary);
+            border-radius: 4px;
+        }
+        
+        /* 
+        ========================================
+        SUCCESS MESSAGE
+        ========================================
+        */
+        .success-message {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: var(--gold-gradient);
+            color: var(--dark-primary);
+            padding: 20px 30px;
+            border-radius: 15px;
+            font-weight: 700;
+            z-index: 10000;
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.4);
+            animation: slideIn 0.5s ease;
+            will-change: transform, opacity;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+        
+        /* 
+        ========================================
+        RESPONSIVE DESIGN
+        ========================================
+        */
+        @media (max-width: 1023px) {
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                background: var(--dark-secondary);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: right 0.3s ease;
+                z-index: 1000;
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .nav-menu .nav-link {
+                font-size: 1.5rem;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .cta-button-3d {
+                display: none;
+            }
+            
+            .hero-title {
+                font-size: clamp(2rem, 10vw, 4rem);
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cards-grid,
+            .flavours-container {
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .package-card {
+                min-height: auto;
+                padding: 2rem 1.5rem;
+            }
+        }
+        
+        /* 
+        ========================================
+        PERFORMANCE OPTIMIZATIONS
+        ========================================
+        */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                animation-delay: 0s !important;
+            }
+            
+            .bg-animation {
+                animation: none !important;
+                background: var(--dark-primary);
+            }
+            
+            .particles {
+                display: none;
+            }
+        }
+        
+        /* 
+        ========================================
+        CUSTOM SCROLLBAR
+        ========================================
+        */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--dark-secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold-gradient);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold-primary);
+        }
+    </style>
+<script type="importmap">
 {
   "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1"
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
   }
 }
 </script>
 </head>
-  <body class="bg-dark-primary text-text-light">
-    <div id="root"></div>
-  </body>
+<body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loader">
+        <div class="loader-3d" aria-label="Loading website content"></div>
+    </div>
+    
+    <!-- Animated Background -->
+    <div class="bg-animation" aria-hidden="true"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container" aria-label="Main navigation">
+        <div class="nav-wrapper">
+            <a href="#home" class="logo-3d">
+                <i class="fas fa-crown crown-icon-3d" aria-hidden="true"></i>
+                <span class="logo-text">Crown Shisha</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu" role="menu">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="#packages" class="nav-link" role="menuitem">Packages</a></li>
+                <li role="none"><a href="#flavours" class="nav-link" role="menuitem">Flavours</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button-3d" aria-label="Request a quote">Book Now</a>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <div class="hero-crown" aria-hidden="true">
+                    <i class="fas fa-crown" aria-hidden="true"></i>
+                </div>
+                <h1 class="hero-title" id="hero-title">Crown Shisha<br>Elite Catering</h1>
+                <p class="hero-subtitle">Redefining Luxury Event Experiences in Toronto GTA</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-3d btn-primary-3d" aria-label="Request a quote">Request Quote</a>
+                    <a href="#services" class="btn-3d btn-secondary-3d" aria-label="Explore our services">Explore</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section class="services-section" id="services" aria-labelledby="services-title">
+            <div class="section-header">
+                <h2 class="section-title-3d" id="services-title">Premium Services</h2>
+                <p class="hero-subtitle">Exclusive Luxury Experiences</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card-3d">
+                    <div class="card-icon" aria-hidden="true">
+                        <i class="fas fa-building" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Corporate Excellence</h3>
+                    <p class="card-description">Transform your corporate events into unforgettable luxury experiences with our elite catering services.</p>
+                    <ul class="card-features">
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Executive Planning</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Premium Equipment</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Professional Team</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Custom Branding</li>
+                    </ul>
+                </article>
+                <article class="card-3d">
+                    <div class="card-icon" aria-hidden="true">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Wedding Elegance</h3>
+                    <p class="card-description">Create magical moments with our sophisticated wedding catering services designed for your special day.</p>
+                    <ul class="card-features">
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Elegant Setups</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Custom Themes</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Photo-Ready Design</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> VIP Service</li>
+                    </ul>
+                </article>
+                <article class="card-3d">
+                    <div class="card-icon" aria-hidden="true">
+                        <i class="fas fa-glass-cheers" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="card-title">Private Luxury</h3>
+                    <p class="card-description">Elevate your private celebrations with our exclusive catering services tailored to your unique vision.</p>
+                    <ul class="card-features">
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Bespoke Design</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Extended Hours</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Elite Staff</li>
+                        <li class="card-feature"><i class="fas fa-check-circle" aria-hidden="true"></i> Full Management</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Packages Section -->
+        <section class="packages-section" id="packages" aria-labelledby="packages-title">
+            <div class="section-header">
+                <h2 class="section-title-3d" id="packages-title">Exclusive Packages</h2>
+                <p class="hero-subtitle">Choose Your Premium Experience</p>
+            </div>
+            <div class="cards-grid">
+                <article class="package-card" aria-labelledby="essential-package">
+                    <h3 class="package-name" id="essential-package">Essential</h3>
+                    <p class="package-price">Intimate Luxury</p>
+                    <ul class="card-features">
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> 10 Premium Units</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> 4-Hour Service</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Professional Staff</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Premium Selection</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Setup & Cleanup</li>
+                    </ul>
+                    <a href="#contact" class="btn-3d btn-secondary-3d" aria-label="Get started with Essential package">Get Started</a>
+                </article>
+                <article class="package-card featured" aria-labelledby="premium-package" aria-describedby="premium-desc">
+                    <h3 class="package-name" id="premium-package">Premium</h3>
+                    <p class="package-price" id="premium-desc">Ultimate Experience</p>
+                    <ul class="card-features">
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> 15 Premium Units</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> 6-Hour Service</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Elite Team</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Exclusive Selection</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Custom Themes</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Event Coordination</li>
+                    </ul>
+                    <a href="#contact" class="btn-3d btn-primary-3d" aria-label="Get started with Premium package">Get Started</a>
+                </article>
+                <article class="package-card" aria-labelledby="executive-package">
+                    <h3 class="package-name" id="executive-package">Executive</h3>
+                    <p class="package-price">Grand Scale Events</p>
+                    <ul class="card-features">
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> 20+ Premium Units</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Full-Day Service</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Dedicated Manager</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> VIP Experience</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Custom Branding</li>
+                        <li class="card-feature"><i class="fas fa-crown" aria-hidden="true"></i> Complete Management</li>
+                    </ul>
+                    <a href="#contact" class="btn-3d btn-secondary-3d" aria-label="Get started with Executive package">Get Started</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Flavours Section -->
+        <section class="flavours-section" id="flavours" aria-labelledby="flavours-title">
+            <div class="section-header">
+                <h2 class="section-title-3d" id="flavours-title">Premium Flavours</h2>
+                <p class="hero-subtitle">An Exquisite Selection For Your Palate</p>
+            </div>
+            <div class="flavours-container">
+                <div class="flavours-grid">
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Double Apple</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Grape</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Gum Mint</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Love 66</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Orange Mint</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Hawaii</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Blueberry</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Lady Killer</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Lemon Mint</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Citrus Mist</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Watermelon</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Lime Lit</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Kiwi</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Irish Peach</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Mint</span></div>
+                    <div class="flavour-item"><i class="fas fa-fire-alt" aria-hidden="true"></i><span>Pan</span></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="section-header">
+                <h2 class="section-title-3d" id="contact-title">Book Your Experience</h2>
+                <p class="hero-subtitle">Let's Create Something Extraordinary</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <i class="fas fa-phone-alt" style="color: var(--gold-primary); font-size: 2rem; margin-bottom: 1rem;" aria-hidden="true"></i>
+                        <h4 class="contact-info-title" style="color: var(--text-light); margin-bottom: 0.5rem;">24/7 Booking</h4>
+                        <p><a href="tel:+16479069995" class="contact-info-link" style="color: var(--text-muted);">+1 (647) 906-9995</a></p>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope" style="color: var(--gold-primary); font-size: 2rem; margin-bottom: 1rem;" aria-hidden="true"></i>
+                        <h4 class="contact-info-title" style="color: var(--text-light); margin-bottom: 0.5rem;">Email Us</h4>
+                        <p><a href="mailto:book@crownshisha.ca" class="contact-info-link" style="color: var(--text-muted);">book@crownshisha.ca</a></p>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt" style="color: var(--gold-primary); font-size: 2rem; margin-bottom: 1rem;" aria-hidden="true"></i>
+                        <h4 class="contact-info-title" style="color: var(--text-light); margin-bottom: 0.5rem;">Service Area</h4>
+                        <p style="color: var(--text-muted);">Greater Toronto Area</p>
+                    </div>
+                </div>
+                <form class="form-3d" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            <div class="error-message" id="firstNameError" aria-live="polite"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            <div class="error-message" id="lastNameError" aria-live="polite"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <div class="error-message" id="emailError" aria-live="polite"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                            <div class="error-message" id="phoneError" aria-live="polite"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventType" class="form-label">Event Type</label>
+                        <select id="eventType" name="eventType" class="form-select" required>
+                            <option value="">Select Event Type</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="private">Private Party</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="error-message" id="eventTypeError" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your vision..." required></textarea>
+                        <div class="error-message" id="messageError" aria-live="polite"></div>
+                    </div>
+                    <button type="submit" class="submit-btn-3d">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">
+                    <i class="fas fa-crown footer-logo" aria-hidden="true"></i>
+                    <span class="logo-text">Crown Shisha</span>
+                </div>
+                <p class="footer-description" style="color: var(--text-muted); margin-bottom: 2rem;">Redefining luxury event experiences with premium catering services across the Greater Toronto Area.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" class="social-link" aria-label="Chat with us on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading" style="color: var(--text-light); margin-bottom: 1.5rem;">Services</h4>
+                <ul class="footer-links" style="list-style: none;">
+                    <li style="margin-bottom: 0.8rem;"><a href="#services" style="color: var(--text-muted); text-decoration: none;">Corporate Events</a></li>
+                    <li style="margin-bottom: 0.8rem;"><a href="#services" style="color: var(--text-muted); text-decoration: none;">Weddings</a></li>
+                    <li style="margin-bottom: 0.8rem;"><a href="#services" style="color: var(--text-muted); text-decoration: none;">Private Parties</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading" style="color: var(--text-light); margin-bottom: 1.5rem;">Company</h4>
+                <ul class="footer-links" style="list-style: none;">
+                    <li style="margin-bottom: 0.8rem;"><a href="#home" style="color: var(--text-muted); text-decoration: none;">About</a></li>
+                    <li style="margin-bottom: 0.8rem;"><a href="#packages" style="color: var(--text-muted); text-decoration: none;">Packages</a></li>
+                    <li style="margin-bottom: 0.8rem;"><a href="#contact" style="color: var(--text-muted); text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading" style="color: var(--text-light); margin-bottom: 1.5rem;">Contact Info</h4>
+                <ul class="footer-contact" style="list-style: none; color: var(--text-muted);">
+                    <li style="margin-bottom: 0.8rem;"><a href="tel:+16479069995" class="footer-contact-link">📞 +1 (647) 906-9995</a></li>
+                    <li style="margin-bottom: 0.8rem;"><a href="mailto:book@crownshisha.ca" class="footer-contact-link">✉️ book@crownshisha.ca</a></li>
+                    <li style="margin-bottom: 0.8rem;">📍 Toronto GTA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Crown Shisha Catering. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // Initialize the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // --- PARTICLE ANIMATION ---
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            if (!particlesContainer) return;
+            
+            const particleCount = Math.min(50, window.innerWidth / 20);
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // --- MOBILE MENU ---
+        const mobileBtn = document.getElementById('mobileBtn');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = navMenu.querySelectorAll('a');
+
+        function closeMobileMenu() {
+            navMenu.classList.remove('active');
+            mobileBtn.setAttribute('aria-expanded', 'false');
+            mobileBtn.querySelector('i').classList.add('fa-bars');
+            mobileBtn.querySelector('i').classList.remove('fa-times');
+        }
+
+        mobileBtn.addEventListener('click', () => {
+            const isActive = navMenu.classList.toggle('active');
+            mobileBtn.setAttribute('aria-expanded', isActive);
+            const icon = mobileBtn.querySelector('i');
+            if (isActive) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // --- SCROLL EFFECTS ---
+        const nav = document.querySelector('.nav-container');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
+                nav.style.backdropFilter = 'blur(30px)';
+                nav.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+            } else {
+                nav.style.background = 'var(--glass-bg)';
+                nav.style.backdropFilter = 'blur(20px)';
+                nav.style.boxShadow = 'none';
+            }
+        }, { passive: true });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-3d, .package-card, .contact-info-card, .form-3d, .flavours-container').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // --- FORM VALIDATION AND SUBMISSION ---
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', handleFormSubmit);
+        }
+
+        function validateField(field) {
+            const errorElement = document.getElementById(field.id + 'Error');
+            errorElement.textContent = '';
+            errorElement.style.display = 'none';
+            field.style.borderColor = 'var(--glass-border)';
+
+            if (!field.checkValidity()) {
+                field.style.borderColor = 'var(--gold-tertiary)';
+                if (field.validity.valueMissing) {
+                    showError(errorElement, 'This field is required');
+                } else if (field.type === 'email' && field.validity.typeMismatch) {
+                    showError(errorElement, 'Please enter a valid email address');
+                }
+                return false;
+            }
+            return true;
+        }
+
+        function showError(element, message) {
+            element.textContent = message;
+            element.style.display = 'block';
+            element.style.color = 'var(--gold-tertiary)';
+            element.style.marginTop = '5px';
+            element.style.fontSize = '0.85rem';
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const submitBtn = form.querySelector('.submit-btn-3d');
+            let isFormValid = true;
+            const fields = form.querySelectorAll('input, select, textarea');
+            fields.forEach(field => {
+                if (!validateField(field)) {
+                    isFormValid = false;
+                }
+            });
+
+            if (!isFormValid) return;
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            setTimeout(() => {
+                showSuccessMessage();
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+                form.reset();
+                fields.forEach(field => {
+                    field.style.borderColor = 'var(--glass-border)';
+                });
+            }, 1000);
+        }
+
+        function showSuccessMessage() {
+            const successMsg = document.createElement('div');
+            successMsg.className = 'success-message';
+            successMsg.textContent = 'Message sent! We\'ll be in touch soon.';
+            successMsg.setAttribute('role', 'alert');
+            document.body.appendChild(successMsg);
+
+            setTimeout(() => {
+                successMsg.style.animation = 'slideOut 0.5s ease forwards';
+                successMsg.addEventListener('animationend', () => successMsg.remove());
+            }, 5000);
+        }
+
+        // --- LOADING SCREEN ---
+        setTimeout(() => {
+            const loader = document.getElementById('loader');
+            if (loader) {
+                loader.classList.add('hidden');
+            }
+        }, 1000);
+
+    });
+    </script>
+
+</body>
 </html>
